@@ -21,8 +21,6 @@ class Value {
 - 在模块A中通过Value.init初始化。
 - 在模块B或模块C中通过Value.get方法可以获得同一线程中模块A已经初始化的Value对象。
 
-[什么情况下使用](https://stackoverflow.com/questions/817856/when-and-how-should-i-use-a-threadlocal-variable)
-
 ## ThreadLocal原理
 
 从线程Thread的角度来看，每个线程内部都会持有一个对ThreadLocalMap实例的引用，ThreadLocalMap实例相当于线程的局部变量空间，存储着线程各自的数据，具体如下：
